@@ -1,0 +1,193 @@
+body{
+    background-color: rgb(209, 199, 199);
+}
+#website *{
+    margin: 0px;
+    padding: 0px;
+}
+#website{
+    display: grid;
+    grid-template-columns:repeat(5, 1fr);
+    grid-template-rows: 150px 70px 1fr 70px;
+    width: 75%;    
+    margin: 0px auto;
+    
+}
+.introduction{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column: 1/6;    
+    color: blueviolet;
+    background-color: #eee;
+    font-size: 45px;
+    font-style:oblique;
+    font-weight: bold;
+}
+
+#menu{
+    grid-column: 1/6;
+    color: black;      
+    
+}
+#menu ul{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    list-style: none;
+    font-size: 15px;
+    margin-top: 18px;
+    
+}
+#contenido{
+    grid-column: 1/5;
+    display: grid;
+    grid-template-columns:repeat(2, 1fr);
+    gap: 10px;
+    padding: 20px;
+    background: #eee;
+}
+#contenido article{
+    background: #ccc;
+    border: 1px solid #555;
+}
+#contenido article h4{
+    font-family:cursive;
+    padding: 15px;
+    border-bottom: 2px solid gray;
+    box-shadow: 5px 8px 2px gray;
+}
+#contenido article p{
+    font-family: Segoe UI;
+    margin-top: 5px;
+    padding: 15px;
+}
+#lateral{
+    grid-column: 5/6;
+    background: rgb(209, 169, 208);
+    color: black;
+    list-style: none;
+}
+#lateral h2{
+    padding-left: 7px;
+    color: blueviolet;
+    font-size: 22px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#lateral ul li{
+    list-style: none;
+    padding-left: 10px;
+    padding-bottom: 20px;
+}
+#website #footer{
+    grid-column: 1/6;
+    color: black;
+    border: 4px solid black;
+    text-align: center;
+    padding-top: 20px;
+}
+
+@media(max-width:891px){
+    #website #cabecera {
+       font-size: 25px;
+    }
+}
+@media(max-width:750px){
+    #website #lateral h2 {
+       font-size: 15px;
+    }
+    .introduction{        
+        font-size: 20px;
+    }
+}
+@media(max-width:580px){
+    #website #lateral h2 {
+        font-size: 10px;
+    }
+}
+@media(max-width:530px){
+    #website #contenido {
+        grid-template-columns:repeat(1, 1fr);   
+    }
+    
+    .introduction{        
+        font-size: 15px;
+    }
+}
+@media(max-width:500px){
+    #website #cabecera {
+       font-size: 20px;
+    }
+    #website #lateral ul li{
+        font-size: 12px;
+    }
+    
+    .introduction{        
+        font-size: 15px;
+    }
+}
+@media(max-width:430px){
+    #website #menu ul{
+        display: grid;
+        grid-template-columns: 1;
+        
+    }
+}
+@media(max-width:397px){
+        
+    .introduction{        
+        font-size: 12px;
+    }
+    #menu ul{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        font-size: 15px;
+        list-style: none;
+        margin-right: 15px;
+        
+    }
+    #lateral{
+        width: 100%;
+        margin-left: 10px;
+        background: rgb(225, 195, 224);
+        color: black;
+        list-style: none;
+    }
+    #lateral h2{
+        padding-left: 3px;
+        color: black;
+        border-bottom: 3px solid gray;
+        font-size: 25px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    #lateral ul li{
+        list-style: none;
+        padding-left: 5px;
+        padding-bottom: 5px;
+        font-size: 5px;
+    }
+    #contenido{
+        
+        padding: 15px;
+        background: #f7f2f2;
+    }
+    #contenido article{
+        background: #e5cfcf;
+        border: 1px solid #555;
+    }
+    #contenido article h4{
+        font-family:cursive;
+        font-size: 14px;
+        padding: 15px;
+        border-bottom: 2px solid gray;
+        box-shadow: 5px 8px 2px gray;
+    }
+    #contenido article p{
+        font-family: Segoe UI;
+        margin-top: 5px;
+        padding: 15px;
+    }
+}
+
